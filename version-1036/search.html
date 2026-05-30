@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>搜索影片-推荐电影-精选影片片单-高清电影免费在线观看</title>
+  <meta name="description" content="搜索推荐电影片单，可按影片名称、年份、地区、类型和标签查找高清电影内容。">
+  <meta name="keywords" content="推荐电影,精选影片,电影片单,高清电影,在线观影,热门电影,高分影片,电影搜索,在线搜索">
+  <link rel="stylesheet" href="./assets/css/original.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="site-body">
+<header class="site-header">
+  <div class="container header-row">
+    <a class="brand" href="./index.html" aria-label="推荐电影">
+      <span class="brand-mark">▶</span>
+      <span class="brand-text">推荐电影</span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a class="" href="./index.html">首页</a>
+      <a class="" href="./categories.html">分类</a>
+      <a class="" href="./rankings.html">排行榜</a>
+      <a class="is-active" href="./search.html">搜索</a>
+      <div class="nav-dropdown">
+        <button type="button">片单</button>
+        <div class="dropdown-panel">
+<a href="./category-hot-picks.html">热门推荐</a>
+<a href="./category-new-film.html">最新电影</a>
+<a href="./category-high-score.html">高分佳片</a>
+<a href="./category-action-adventure.html">动作冒险</a>
+<a href="./category-romance-drama.html">爱情剧情</a>
+<a href="./category-suspense-crime.html">悬疑犯罪</a>
+<a href="./category-fantasy-sci-fi.html">科幻奇幻</a>
+<a href="./category-comedy-family.html">喜剧合家欢</a>
+        </div>
+      </div>
+    </nav>
+    <form class="site-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片..." autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-toggle" type="button" aria-label="打开导航">☰</button>
+  </div>
+  <div class="mobile-panel">
+    <form class="mobile-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片..." autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <nav aria-label="移动导航">
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类总览</a>
+      <a href="./rankings.html">排行榜</a>
+      <a href="./search.html">搜索</a>
+<a href="./category-hot-picks.html">热门推荐</a>
+<a href="./category-new-film.html">最新电影</a>
+<a href="./category-high-score.html">高分佳片</a>
+<a href="./category-action-adventure.html">动作冒险</a>
+<a href="./category-romance-drama.html">爱情剧情</a>
+<a href="./category-suspense-crime.html">悬疑犯罪</a>
+<a href="./category-fantasy-sci-fi.html">科幻奇幻</a>
+<a href="./category-comedy-family.html">喜剧合家欢</a>
+<a href="./category-animation-anime.html">动画动漫</a>
+<a href="./category-asian-stories.html">亚洲片单</a>
+<a href="./category-global-cinema.html">全球电影</a>
+<a href="./category-series-theater.html">剧集精选</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="page-hero small-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="./index.html">首页</a><span>›</span><strong>搜索</strong></nav>
+      <span class="section-kicker">Search</span>
+      <h1>搜索影片</h1>
+      <p>输入影片名、地区、年份、类型或标签，快速筛选片单内容。</p>
+      <form class="search-page-form" action="./search.html" method="get">
+        <input id="searchInput" type="search" name="q" placeholder="搜索影片、标签、年份、地区" autocomplete="off">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </section>
+  <section class="container section-block">
+    <div class="section-heading compact-heading">
+      <div>
+        <span class="section-kicker">Results</span>
+        <h2 id="searchTitle">搜索结果</h2>
+      </div>
+    </div>
+    <div id="searchResults" class="movie-grid"></div>
+    <p id="searchEmpty" class="empty-state" hidden>暂无匹配结果</p>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="footer-brand" href="./index.html"><span>▶</span>推荐电影</a>
+      <p>依据题材、热度与口碑整理推荐电影片单，收录多类型影片内容，适合查找近期值得关注的电影。</p>
+    </div>
+    <div>
+      <h2>快速入口</h2>
+      <div class="footer-links">
+        <a href="./index.html">首页</a>
+        <a href="./categories.html">分类总览</a>
+        <a href="./rankings.html">排行榜</a>
+        <a href="./search.html">搜索</a>
+      </div>
+    </div>
+    <div>
+      <h2>精选分类</h2>
+      <div class="footer-links">
+<a href="./category-hot-picks.html">热门推荐</a>
+<a href="./category-new-film.html">最新电影</a>
+<a href="./category-high-score.html">高分佳片</a>
+<a href="./category-action-adventure.html">动作冒险</a>
+<a href="./category-romance-drama.html">爱情剧情</a>
+<a href="./category-suspense-crime.html">悬疑犯罪</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 推荐电影</div>
+</footer>
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/search-data.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

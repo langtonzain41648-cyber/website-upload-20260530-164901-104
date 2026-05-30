@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索-高清电影大全-热门好看的电影片库-精选影片在线点播</title>
+    <meta name="description" content="高清电影大全搜索页，可按片名、地区、年份、类型、标签查找影片。">
+    <meta name="keywords" content="高清电影大全,热门电影,精选影片,在线点播,电影片库,高分电影,经典电影,影片搜索,电影搜索">
+    <link rel="stylesheet" href="assets/original-style.css">
+    <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="site-logo" href="index.html" aria-label="高清电影大全首页">
+                <span class="site-logo-mark">影</span>
+                <span>高清电影大全</span>
+            </a>
+            <nav class="desktop-nav" aria-label="主导航">
+                <a href="index.html">首页</a>
+                <a href="categories.html">分类</a>
+                <a href="ranking.html">排行榜</a>
+                    <a href="categories/hot-movies.html">热门电影</a>
+                    <a href="categories/quality-series.html">精品剧集</a>
+                    <a href="categories/variety-documentary.html">综艺纪录</a>
+                    <a href="categories/action-crime.html">动作犯罪</a>
+                    <a href="categories/romance-drama.html">爱情剧情</a>
+                    <a href="categories/comedy-family.html">喜剧家庭</a>
+            </nav>
+            <form class="site-search" action="search.html" method="get" role="search">
+                <input type="search" name="q" placeholder="搜索影视作品..." autocomplete="off">
+                <button type="submit">搜索</button>
+            </form>
+            <button class="mobile-menu-button" type="button" aria-label="打开导航" data-mobile-menu-button>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-nav" data-mobile-nav>
+            <form class="mobile-search" action="search.html" method="get" role="search">
+                <input type="search" name="q" placeholder="搜索影视作品..." autocomplete="off">
+                <button type="submit">搜索</button>
+            </form>
+            <nav aria-label="移动端导航">
+                <a href="index.html">首页</a>
+                <a href="categories.html">分类总览</a>
+                <a href="ranking.html">排行榜</a>
+                    <a href="categories/hot-movies.html">热门电影</a>
+                    <a href="categories/quality-series.html">精品剧集</a>
+                    <a href="categories/variety-documentary.html">综艺纪录</a>
+                    <a href="categories/action-crime.html">动作犯罪</a>
+                    <a href="categories/romance-drama.html">爱情剧情</a>
+                    <a href="categories/comedy-family.html">喜剧家庭</a>
+                    <a href="categories/sci-fi-fantasy.html">科幻奇幻</a>
+                    <a href="categories/suspense-thriller.html">悬疑惊悚</a>
+                    <a href="categories/classic-history.html">经典历史</a>
+                    <a href="categories/anime-adventure.html">动画冒险</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="sub-hero search-hero">
+            <div>
+                <span>Search</span>
+                <h1>搜索影片</h1>
+                <p>输入片名、地区、年份、类型或关键词，在静态片库中快速定位想看的内容。</p>
+            </div>
+        </section>
+
+        <section class="content-section slim">
+            <form class="big-search" action="search.html" method="get" role="search">
+                <input id="searchInput" type="search" name="q" placeholder="搜索影视作品..." autocomplete="off">
+                <button type="submit">搜索</button>
+            </form>
+            <div class="search-summary" id="searchSummary">输入关键词后显示匹配结果。</div>
+            <div class="movie-grid" id="searchResults"></div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a class="site-logo footer-logo" href="index.html">
+                    <span class="site-logo-mark">影</span>
+                    <span>高清电影大全</span>
+                </a>
+                <p>汇集不同类型的高清电影内容，涵盖热门片单、经典佳作与近期更新影片，便于按题材和热度浏览。</p>
+            </div>
+            <div class="footer-links">
+                <h2>频道导航</h2>
+                <div class="footer-link-grid">
+                    <a href="categories/hot-movies.html">热门电影</a>
+                    <a href="categories/quality-series.html">精品剧集</a>
+                    <a href="categories/variety-documentary.html">综艺纪录</a>
+                    <a href="categories/action-crime.html">动作犯罪</a>
+                    <a href="categories/romance-drama.html">爱情剧情</a>
+                    <a href="categories/comedy-family.html">喜剧家庭</a>
+                    <a href="categories/sci-fi-fantasy.html">科幻奇幻</a>
+                    <a href="categories/suspense-thriller.html">悬疑惊悚</a>
+                    <a href="categories/classic-history.html">经典历史</a>
+                    <a href="categories/anime-adventure.html">动画冒险</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h2>站内入口</h2>
+                <div class="footer-link-grid compact">
+                    <a href="index.html">首页</a>
+                    <a href="categories.html">分类总览</a>
+                    <a href="ranking.html">排行榜</a>
+                    <a href="search.html">搜索</a>
+                    <a href="sitemap.html">站点地图</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+    <script type="module" src="assets/site.js"></script>
+</body>
+</html>

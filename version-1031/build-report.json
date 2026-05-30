@@ -1,0 +1,26 @@
+{
+  "movie_count": 2000,
+  "category_counts": {
+    "日韩电影": 200,
+    "华语精选": 200,
+    "欧美大片": 200,
+    "热播剧集": 200,
+    "动作武侠": 200,
+    "爱情剧情": 200,
+    "悬疑惊悚": 200,
+    "喜剧综艺": 200,
+    "动画动漫": 200,
+    "纪录短剧": 200
+  },
+  "video_source_count": 20,
+  "validation": {
+    "html_files": 2016,
+    "movie_files": 2000,
+    "movie_count": 2000,
+    "missing_baidu": [],
+    "source_issues": [],
+    "ok": true
+  },
+  "zip_path": "/mnt/data/generated_static_movie_site.zip",
+  "zip_size": 9774885
+}
